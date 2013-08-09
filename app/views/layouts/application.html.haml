@@ -1,0 +1,47 @@
+!!!
+%html
+  %head
+    %title Day One
+    = stylesheet_link_tag "application"
+  %body
+    .container
+      %header
+        %nav
+          %ul
+            %li
+              %a{:href => "/"} Home
+            %li
+              %a{:href => "/contact"} Contact Us
+            %li
+              %a{:href => "/about"} About
+        %h1 Sunshine Blog
+      #content
+        %aside.sidebar
+          %ul.categories
+            %li Home
+            %li Garden
+            %li Power Tools
+            %li Entertainment
+        %section#posts
+          %article.post
+            %h3 Went to the park today
+            .meta
+              %time 5/30/2013
+              %span.author Joe Jones
+            %summary
+              %p It was a beautiful day. And we played fetch with the cat.
+          %article.post
+            %h3 Had fun at the beach today
+            .meta
+              %time 5/29/2013
+              %span.author Cindy Jones
+            %summary
+              %p The waves were great and I enjoyed my stand up paddle board.
+      %footer
+        %ul
+          %li Home
+          %li Contact Us
+          %li About
+        #copyright
+          \&copy; 2013 Sunshine Blog
+
